@@ -1,0 +1,365 @@
+@import "components";
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+body {
+    font-family: $font-family;
+    background: black;
+    color: $white;
+}
+a {
+    text-decoration: none;
+    color: $white;
+    border-radius: 10px;
+}
+h2 {
+    @include padding;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 3em;
+}
+h3 {
+    font-size: 1.5em;
+    padding: 20px;
+}
+.navbar {
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 90px;
+    background: $primary-opac;
+    border-radius: 10px;
+}
+.social-media {
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    background: $primary-opac;
+    width: 50px;
+    border-radius: 0 10px 10px 0;
+    font-size: 1.3em;
+    ul {
+        li {
+            padding: 10px;
+            list-style: none;
+            a {
+                padding: 10px;
+            }
+        }
+    }
+    a:hover {
+        background-color: $white-opac;
+        color: $primary;
+    }
+}
+.nav-container {
+    border-radius: 10px;
+    a {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+}
+.opac-font {
+    color: $white-opac;
+}
+.primary-font {
+    color: $primary;
+}
+nav {
+    a:hover {
+        background-color: $white-opac;
+        color: $primary;
+    }
+}
+
+//The whole style for the index section
+#home {
+    margin: 180px 0;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5em;
+
+        .text-container {
+            .name-cont {
+                padding: 30px;
+            }
+            p {
+                padding: 30px;
+            }
+            width: 60%;
+        }
+        .image-container {
+            display: flex;
+
+            justify-content: center;
+            width: 40%;
+            border-radius: 50%;
+            img {
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+                outline: 10px solid $primary-opac;
+            }
+        }
+    }
+}
+
+//The whole css for the section skills
+#skills {
+    @include margin;
+    h3 {
+        color: $white-opac;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        .skill-container {
+            margin: 20px;
+            border-left: 3px solid $primary;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            ul {
+                padding: 30px;
+            }
+            h4 {
+                color: $primary;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+//the whole style for the eductaion section
+#education {
+    @include margin;
+    h4 {
+        color: $white;
+        padding: 15px;
+    }
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        color: $primary;
+        .education-cont {
+            transition: all ease-in 0.2s;
+            border-radius: 10px;
+            margin: 30px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.148);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span {
+                padding: 10px;
+            }
+        }
+        .education-cont:hover {
+            box-shadow: 0 10px 10px $primary-opac;
+            border: solid $primary-opac 1px;
+        }
+    }
+}
+
+//Th whole stule for the section experience
+#experience {
+    @include margin;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        .exp-container {
+            transition: all ease-in 0.2s;
+            border-radius: 5px;
+            width: 100%;
+            margin: 30px 0;
+            background: $primary-opac;
+            display: flex;
+            justify-content: space-between;
+            .img-container {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    padding: 10px;
+                    height: 50px;
+                    width: 60%;
+                }
+            }
+            .text-container {
+                padding: 20px;
+
+                ul {
+                    margin: 20px;
+                }
+                width: 70%;
+                span {
+                    color: $white-opac;
+                    padding: 10px;
+                }
+                p {
+                    font-style: italic;
+                }
+            }
+        }
+        .exp-container:hover {
+            outline: 3px solid $white-opac;
+        }
+    }
+}
+
+//This is the whole css for the Details section
+#details {
+    @include margin;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 0 auto;
+    p {
+        padding: 20px;
+    }
+}
+#cta {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    background: $primary-opac;
+    height: 120px;
+    .link-container {
+        margin: 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 35px;
+        border: solid 3px;
+        border-radius: 10px;
+    }
+    a {
+        align-self: center;
+        text-decoration: none;
+        color: $white;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+    .link-container:hover {
+        background: $white;
+        color: $primary;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        align-items: center;
+        width: 100% !important;
+    }
+    #home {
+        .container {
+            flex-direction: column-reverse;
+        }
+        .text-container {
+            width: 100% !important;
+        }
+        .image-container {
+            width: 100% !important;
+            border-radius: 50%;
+            padding-bottom: 50px;
+        }
+    }
+    #experience {
+        .exp-container {
+            display: flex;
+            align-items: center;
+            width: 90% !important;
+            flex-direction: column;
+        }
+        .text-container {
+            width: 90% !important;
+        }
+        img {
+            width: 200px !important;
+        }
+    }
+    #cta {
+        justify-content: center;
+    }
+    .social-media {
+        ul {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: center;
+        }
+        width: 100% !important;
+        position: relative;
+    }
+    nav {
+        display: flex;
+        justify-content: center !important;
+    }
+    .navbar {
+        position: relative;
+        width: 90%;
+        justify-content: center;
+    }
+    .nav-container {
+        width: 20% !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .navbar {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .nav-container {
+        padding: 3px;
+        height: 45px;
+        width: 45px;
+        font-size: 0.7em;
+    }
+    body {
+        font-size: 0.9em !important;
+    }
+    #home {
+        img {
+            width: 270px !important;
+            height: 270px !important;
+        }
+    }
+}
