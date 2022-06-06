@@ -173,7 +173,7 @@ nav a:hover {
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  outline: 10px solid rgba(30, 143, 255, 0.478);
+  border: 10px solid rgba(30, 143, 255, 0.478);
 }
 
 #skills {
