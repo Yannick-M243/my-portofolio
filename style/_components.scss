@@ -1,12 +1,17 @@
+/*This page contains reusable css components*/
+
+//Importing the font family
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-//padding/margin
+
+// padding/margin
 @mixin padding {
     padding: 30px 0;
 }
 @mixin margin {
     margin: 150px 0;
 }
-//fonts
+
+//fonts-family
 $font-family: "Roboto Mono", monospace;
 
 //Colors
@@ -14,3 +19,11 @@ $primary: rgb(30, 143, 255);
 $primary-opac: rgba(30, 143, 255, 0.478);
 $white: rgb(229, 229, 229);
 $white-opac: rgba(255, 255, 255, 0.455);
+
+//font-colors
+.opac-font {
+    color: $white-opac;
+}
+.primary-font {
+    color: $primary;
+}

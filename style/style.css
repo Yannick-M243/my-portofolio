@@ -1,4 +1,13 @@
+/*This page contains reusable css components*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+.opac-font {
+  color: rgba(255, 255, 255, 0.455);
+}
+
+.primary-font {
+  color: #1e8fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -37,7 +46,41 @@ h3 {
   padding: 20px;
 }
 
-.navbar {
+nav .nav-container {
+  border-radius: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+  width: 90px;
+}
+
+nav .nav-container a {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navbar {
   margin: 10px;
   position: fixed;
   bottom: 0;
@@ -54,6 +97,11 @@ h3 {
   height: 90px;
   background: rgba(30, 143, 255, 0.478);
   border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.455);
+  color: #1e8fff;
 }
 
 .social-media {
@@ -76,53 +124,6 @@ h3 {
 }
 
 .social-media a:hover {
-  background-color: rgba(255, 255, 255, 0.455);
-  color: #1e8fff;
-}
-
-.nav-container {
-  border-radius: 10px;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 90px;
-  width: 90px;
-}
-
-.nav-container a {
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.opac-font {
-  color: rgba(255, 255, 255, 0.455);
-}
-
-.primary-font {
-  color: #1e8fff;
-}
-
-nav a:hover {
   background-color: rgba(255, 255, 255, 0.455);
   color: #1e8fff;
 }

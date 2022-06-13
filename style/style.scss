@@ -1,4 +1,7 @@
+//importing the css components created in the _components.scss
 @import "components";
+
+//Global Settings
 * {
     padding: 0;
     margin: 0;
@@ -30,18 +33,45 @@ h3 {
     font-size: 1.5em;
     padding: 20px;
 }
-.navbar {
-    margin: 10px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    height: 90px;
-    background: $primary-opac;
-    border-radius: 10px;
+
+//This is the navigation bar style
+nav {
+    .nav-container {
+        border-radius: 10px;
+        a {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        width: 90px;
+    }
+    .navbar {
+        margin: 10px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: 90px;
+        background: $primary-opac;
+        border-radius: 10px;
+    }
+
+    a:hover {
+        background-color: $white-opac;
+        color: $primary;
+    }
 }
+
+//this is the social media container style
 .social-media {
     position: fixed;
     left: 0;
@@ -64,36 +94,8 @@ h3 {
         color: $primary;
     }
 }
-.nav-container {
-    border-radius: 10px;
-    a {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90px;
-    width: 90px;
-}
-.opac-font {
-    color: $white-opac;
-}
-.primary-font {
-    color: $primary;
-}
-nav {
-    a:hover {
-        background-color: $white-opac;
-        color: $primary;
-    }
-}
 
-//The whole style for the index section
+//This is the style for the whole welcome section
 #home {
     margin: 180px 0;
     display: flex;
@@ -130,7 +132,7 @@ nav {
     }
 }
 
-//The whole css for the section skills
+//This is the style for the whole skills section
 #skills {
     @include margin;
     h3 {
@@ -157,7 +159,7 @@ nav {
     }
 }
 
-//the whole style for the eductaion section
+//This is the style for the whole education section
 #education {
     @include margin;
     h4 {
@@ -191,7 +193,7 @@ nav {
     }
 }
 
-//Th whole stule for the section experience
+//This is the style for the whole experience section
 #experience {
     @include margin;
     display: flex;
@@ -245,7 +247,7 @@ nav {
     }
 }
 
-//This is the whole css for the Details section
+//This is the style for the whole details section
 #details {
     @include margin;
     font-size: 1.2em;
@@ -284,6 +286,7 @@ nav {
     }
 }
 
+//changing element attributes for screen smaller than 800px to enable responsiveness
 @media screen and (max-width: 800px) {
     .container {
         align-items: center;
@@ -342,6 +345,7 @@ nav {
     }
 }
 
+//changing element attributes for screen smaller than 540px to enable responsiveness
 @media screen and (max-width: 540px) {
     .navbar {
         width: 100%;
