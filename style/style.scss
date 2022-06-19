@@ -336,27 +336,31 @@ nav {
         justify-content: center !important;
     }
     .navbar {
-        position: relative;
-        width: 90%;
-        justify-content: center;
+        right: unset !important;
+        top: 0 !important;
+        height: 60px !important;
+        width: 95% !important;
+        justify-content: center !important;
     }
     .nav-container {
         width: 20% !important;
+        margin: 5px;
+        a {
+            height: 30% !important;
+        }
     }
 }
 
 //changing element attributes for screen smaller than 540px to enable responsiveness
 @media screen and (max-width: 540px) {
     .navbar {
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
+        height: 45px !important;
+        margin: 0 !important;
     }
     .nav-container {
-        padding: 3px;
-        height: 45px;
-        width: 45px;
-        font-size: 0.7em;
+        height: 45px !important;
+        width: 45px !important;
+        font-size: 0.7em !important;
     }
     body {
         font-size: 0.9em !important;
