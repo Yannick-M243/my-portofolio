@@ -330,6 +330,7 @@ nav {
         }
         width: 100% !important;
         position: relative;
+        border-radius: 0;
     }
     nav {
         display: flex;
@@ -355,7 +356,7 @@ nav {
 @media screen and (max-width: 540px) {
     .navbar {
         height: 45px !important;
-        margin: 0 !important;
+        margin: 5px !important;
     }
     .nav-container {
         height: 45px !important;

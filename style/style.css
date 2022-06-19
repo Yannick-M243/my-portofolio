@@ -464,6 +464,7 @@ nav a:hover {
   .social-media {
     width: 100% !important;
     position: relative;
+    border-radius: 0;
   }
   .social-media ul {
     display: -webkit-box !important;
@@ -506,7 +507,7 @@ nav a:hover {
 @media screen and (max-width: 540px) {
   .navbar {
     height: 45px !important;
-    margin: 0 !important;
+    margin: 5px !important;
   }
   .nav-container {
     height: 45px !important;
